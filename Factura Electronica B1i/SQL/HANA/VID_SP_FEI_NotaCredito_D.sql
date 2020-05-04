@@ -25,7 +25,7 @@ BEGIN
 		,T0."Dscription_Larga"																	"DscItem"
 		
 		,T0."CodImpAdic"																		"CodImpAdic"
-		,T0."MontoImptoAdic"																	"MntImpAdic"
+		--,T0."MontoImptoAdic"																	"MntImpAdic"
 		,IFNULL(T1."DET_EXTRA1", '')															"Extra1"
 		,IFNULL(T1."DET_EXTRA2", '')															"Extra2"
 		,IFNULL(T1."DET_EXTRA3", '')															"Extra3"

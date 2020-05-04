@@ -1,0 +1,7 @@
+°Conversar con Daniel, para que genere reporte boleta en la ruta
+POST /api/Visualk/GeneracionDteIntegrationFramework 
+
+°crear parametro para invocacion de boleta
+
+°crear paremetro para ruta de obtencion de imagen de timbre
+

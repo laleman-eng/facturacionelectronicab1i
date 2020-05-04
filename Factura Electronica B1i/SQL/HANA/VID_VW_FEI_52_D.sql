@@ -63,7 +63,7 @@ LEFT JOIN "WTR4" T4 ON T4."DocEntry" = T0."DocEntry"
 	AND T4."StaCode" NOT IN ('IVA', 'IVA_EXE') 
 LEFT JOIN "@VID_FEIMPADIC" F0 ON F0."Code" = T4."StaCode" 
 WHERE 1 = 1 
-AND IFNULL(T0."FolioNum",0) <> 0 
+--AND IFNULL(T0."FolioNum",0) <> 0 
 AND UPPER( LEFT(N0."BeginStr", 1)) = 'E' 
 
 UNION ALL 
@@ -98,7 +98,8 @@ JOIN "OUSR" U0 ON U0."INTERNAL_K" = T0."UserSign"
 JOIN "NNM1" N0 ON N0."Series" = T0."Series" 
 AND N0."ObjectCode" = T0."ObjType" 
 WHERE 1 = 1 
-AND IFNULL(T0."FolioNum", 0) <> 0 AND UPPER(LEFT(N0."BeginStr", 1)) = 'E' 
+--AND IFNULL(T0."FolioNum", 0) <> 0 
+AND UPPER(LEFT(N0."BeginStr", 1)) = 'E' 
 
 UNION ALL 
 
@@ -159,7 +160,7 @@ LEFT JOIN "RPD4" T4 ON T4."DocEntry" = T0."DocEntry"
  AND T4."StaCode" NOT IN ('IVA','IVA_EXE') 
 LEFT JOIN "@VID_FEIMPADIC" F0 ON F0."Code" = T4."StaCode" 
 WHERE 1 = 1 
-AND IFNULL(T0."FolioNum", 0) <> 0 
+--AND IFNULL(T0."FolioNum", 0) <> 0 
 AND UPPER(LEFT(N0."BeginStr", 1)) = 'E' 
 
 UNION ALL 
@@ -193,7 +194,7 @@ JOIN "OUSR" U0 ON U0."INTERNAL_K" = T0."UserSign"
 JOIN "NNM1" N0 ON N0."Series" = T0."Series" 
 AND N0."ObjectCode" = T0."ObjType" 
 WHERE 1 = 1 
-AND IFNULL(T0."FolioNum", 0) <> 0 
+--AND IFNULL(T0."FolioNum", 0) <> 0 
 AND UPPER(LEFT(N0."BeginStr", 1)) = 'E' 
 
 UNION ALL 
@@ -246,7 +247,7 @@ LEFT JOIN "DLN4" T4 ON T4."DocEntry" = T0."DocEntry"
  AND T4."StaCode" NOT IN ('IVA', 'IVA_EXE') 
 LEFT JOIN "@VID_FEIMPADIC" F0 ON F0."Code" = T4."StaCode" 
 WHERE 1 = 1 
-AND IFNULL(T0."FolioNum", 0) <> 0 
+--AND IFNULL(T0."FolioNum", 0) <> 0 
 AND UPPER(LEFT(N0."BeginStr", 1)) = 'E'
  
 UNION ALL
@@ -280,7 +281,7 @@ JOIN "OUSR" U0 ON U0."INTERNAL_K" = T0."UserSign"
 JOIN "NNM1" N0 ON N0."Series" = T0."Series" 
 AND N0."ObjectCode" = T0."ObjType" 
 WHERE 1 = 1 
-AND IFNULL(T0."FolioNum", 0) <> 0 
+--AND IFNULL(T0."FolioNum", 0) <> 0 
 AND UPPER( LEFT(N0."BeginStr", 1)) = 'E' 
 
 UNION ALL 
@@ -341,7 +342,7 @@ AND T4."LineNum" = T1."LineNum"
 AND T4."StaCode" NOT IN ('IVA', 'IVA_EXE') 
 LEFT JOIN "@VID_FEIMPADIC" F0 ON F0."Code" = T4."StaCode" 
 WHERE 1 = 1 
-AND IFNULL(T0."FolioNum", 0) <> 0
+--AND IFNULL(T0."FolioNum", 0) <> 0
 AND UPPER( LEFT(N0."BeginStr", 1)) = 'E' 
 
 UNION ALL 
@@ -375,5 +376,5 @@ JOIN "OUSR" U0 ON U0."INTERNAL_K" = T0."UserSign"
 JOIN "NNM1" N0 ON N0."Series" = T0."Series" 
 AND N0."ObjectCode" = T0."ObjType" 
 WHERE 1 = 1 
-AND IFNULL(T0."FolioNum", 0) <> 0 
+--AND IFNULL(T0."FolioNum", 0) <> 0 
 AND UPPER(LEFT(N0."BeginStr", 1)) = 'E'
